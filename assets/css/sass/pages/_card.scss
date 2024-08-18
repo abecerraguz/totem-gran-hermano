@@ -125,11 +125,38 @@
         justify-content: center;
         align-items: center;
         background-color: $white;
+        padding-top: 0.3rem;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
         i{
             color: #100423;
             font-size: 1.5rem;
         }
     }
+
+    &__number{
+        font-size: 1.875rem;
+    }
+
+    &__add.addProduct{
+        position: absolute;
+        top: 1.3rem;
+        right: 1.25rem;
+        width: 195px;
+        height: 50px;
+        border-radius: 8px;
+        border: 1px solid #100423;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        background-color: $white;
+        padding-top: 0.3rem;
+        i{
+            color: #555555;
+            font-size: 1.3rem;
+        }
+    }
+
     &__header{
         position: relative;
         padding:1rem 3.5rem 0.5rem 3.5rem ;

@@ -214,6 +214,23 @@ $max-width-40:40%;
   position: absolute;
 }
 
+.d-none {
+  display: none;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.d-block {
+  display: inline-block;
+  opacity: 1;
+}
+
+.bg-black {
+  background-color: #000;
+  color: white;
+  padding: 2rem;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -799,10 +816,34 @@ template {
   justify-content: center;
   align-items: center;
   background-color: #fff;
+  padding-top: 0.3rem;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
 }
 .inCategory__add i {
   color: #100423;
   font-size: 1.5rem;
+}
+.inCategory__number {
+  font-size: 1.875rem;
+}
+.inCategory__add.addProduct {
+  position: absolute;
+  top: 1.3rem;
+  right: 1.25rem;
+  width: 195px;
+  height: 50px;
+  border-radius: 8px;
+  border: 1px solid #100423;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  padding-top: 0.3rem;
+}
+.inCategory__add.addProduct i {
+  color: #555555;
+  font-size: 1.3rem;
 }
 .inCategory__header {
   position: relative;

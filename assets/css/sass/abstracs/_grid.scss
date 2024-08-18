@@ -189,6 +189,23 @@ $max-width-40:40%;
 .p-relative{position: relative;}
 .p-absolute{position: absolute;}
 
+.d-none{
+    display: none;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.d-block{
+    display: inline-block;
+    opacity: 1;
+}
+
+.bg-black{
+    background-color: $black;
+    color: white;
+    padding: 2rem;
+}
+
 
 
 
