@@ -202,6 +202,10 @@ $max-width-40:40%;
   padding-left: 0.5rem;
 }
 
+.mt-200 {
+  margin-top: 200px;
+}
+
 .p-relative {
   position: relative;
 }
@@ -233,6 +237,7 @@ body * {
 
 body {
   margin: 0;
+  background-color: rgba(241, 241, 241, 0.1411764706);
   font-family: "texta_altregular", sans-serif;
 }
 
@@ -664,6 +669,13 @@ template {
   font-size: 1.5rem;
 }
 
+.top-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
 .card {
   width: 100%;
   height: 417px;
@@ -759,6 +771,76 @@ template {
 .cardPedidosYaMerket__categorias {
   font-size: 2rem;
   margin: 0 0 1rem 0;
+}
+
+.inCategory {
+  font-size: 2.375rem;
+  margin: 2.25rem 0;
+}
+.inCategory__card {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border: 1.893px solid #DBDADE;
+  border-radius: 8px;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  background-color: #fff;
+}
+.inCategory__add {
+  position: absolute;
+  top: 1.3rem;
+  right: 1.25rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  border: 1px solid #100423;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.inCategory__add i {
+  color: #100423;
+  font-size: 1.5rem;
+}
+.inCategory__header {
+  position: relative;
+  padding: 1rem 3.5rem 0.5rem 3.5rem;
+}
+.inCategory__header img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  z-index: 0;
+}
+.inCategory__body {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 0 1.25rem;
+}
+.inCategory__body--price {
+  font-size: 1.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 0 0.5rem 0;
+  color: #100423;
+}
+.inCategory__body--detail {
+  font-size: 1.375rem;
+  margin: 0 0 2rem 0;
+  color: #100423;
+}
+.inCategory__body--detailDos {
+  font-size: 1.25rem;
+  margin: 0;
+  color: #100423;
+}
+.inCategory__body--detailDos span {
+  color: #70697A;
+  font-weight: bold;
+  font-size: 1.25rem;
 }
 
 .inicio {
