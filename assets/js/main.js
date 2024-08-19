@@ -6,23 +6,27 @@ $(document).ready(function () {
     allCard.forEach( element => {
 
         let plusIcon = element.querySelector('.bi-plus-lg');
-
+        
         plusIcon.addEventListener('click', (e) => {
 
             e.preventDefault();
 
             element.classList.add('addProduct');
 
+            setTimeout(() => {
+                element.classList.add('bg-black');
+            }, 600);
+       
+
             element.querySelectorAll('.d-none').forEach(child => {
                 child.classList.remove('d-none');
             });
-
+            console.log('Salida de element-->', element)
             setTimeout(() => {
                 element.querySelector('.bi-trash').classList.add('d-none');
-                element.querySelector('.inCategory__number').classList.add('bg-black')
                 plusIcon.classList.add('d-none');
                 element.classList.remove('addProduct');
-            }, 1000 );
+            }, 500 );
 
         });
 
