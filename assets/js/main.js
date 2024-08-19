@@ -5,11 +5,15 @@ $(document).ready(function () {
 
     allCard.forEach( element => {
 
-        let plusIcon = element.querySelector('.bi-plus-lg');
+        let plusIcon = element.querySelector('.bi-plus-lg'),
+        agregarAlCarro = document.querySelector('.agregarAlCarro');
         
         plusIcon.addEventListener('click', (e) => {
 
             e.preventDefault();
+         
+            console.log('Salida de agregarAlCarro-->', agregarAlCarro);
+            agregarAlCarro.classList.add('agregarAlCarroActive');
 
             element.classList.add('addProduct');
 

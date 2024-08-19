@@ -28,6 +28,14 @@
     background: rgb(8,102,220);
     background: #1C8663;
   }
+
+  .skillBarValue.superoPresupuesto {
+    height: 1.66em;
+    float: left;
+    background:#0866dc;
+    background: rgb(8,102,220);
+    background: #B40443;
+  }
   
   /* Allowed values for the css skill bars */
   .value-00  { width: 0;    }
@@ -82,11 +90,12 @@
     height: auto;
     background-color: $white;
     position: fixed;
-    bottom: 0;
+    bottom: -200px;
     left: 0;
     z-index: 999;
     box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.3);
     padding: 1.3rem 2.25rem 1.5rem 2.25rem;
+    transition: all 0.3s ease-in-out;
     &__text{
         text-align: center;
         font-size: 1.5rem;
@@ -110,4 +119,52 @@
         }
     }
 }
+
+
+.agregarAlCarro{
+    width: 100%;
+    height: auto;
+    background-color: $white;
+    position: fixed;
+    bottom: -200px;
+    left: 0;
+    z-index: 999;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.3);
+    padding: 1.3rem 2.25rem 1.5rem 2.25rem;
+    transition: all 0.3s ease-in-out;
+    &__text{
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    &__text.superoPresupuesto{
+      text-align: center;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: red!important;
+  }
+    &__body{
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__info{
+        p{
+            margin: 0;
+            font-size: 1.5rem;
+            color: #4C4359;
+        }
+        h4{
+            margin: 0;
+            font-size:2.375rem;
+            color: $black;
+        }
+    }
+}
+
+.agregarAlCarroActive{
+    bottom: 0;
+}
+
+
 

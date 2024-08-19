@@ -946,6 +946,14 @@ template {
   background: #1C8663;
 }
 
+.skillBarValue.superoPresupuesto {
+  height: 1.66em;
+  float: left;
+  background: #0866dc;
+  background: rgb(8, 102, 220);
+  background: #B40443;
+}
+
 /* Allowed values for the css skill bars */
 .value-00 {
   width: 0;
@@ -1014,11 +1022,12 @@ template {
   height: auto;
   background-color: #fff;
   position: fixed;
-  bottom: 0;
+  bottom: -200px;
   left: 0;
   z-index: 999;
   box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.3);
   padding: 1.3rem 2.25rem 1.5rem 2.25rem;
+  transition: all 0.3s ease-in-out;
 }
 .agregarAlCarro__text {
   text-align: center;
@@ -1039,4 +1048,47 @@ template {
   margin: 0;
   font-size: 2.375rem;
   color: #000;
+}
+
+.agregarAlCarro {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  position: fixed;
+  bottom: -200px;
+  left: 0;
+  z-index: 999;
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.3);
+  padding: 1.3rem 2.25rem 1.5rem 2.25rem;
+  transition: all 0.3s ease-in-out;
+}
+.agregarAlCarro__text {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.agregarAlCarro__text.superoPresupuesto {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: red !important;
+}
+.agregarAlCarro__body {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.agregarAlCarro__info p {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #4C4359;
+}
+.agregarAlCarro__info h4 {
+  margin: 0;
+  font-size: 2.375rem;
+  color: #000;
+}
+
+.agregarAlCarroActive {
+  bottom: 0;
 }/*# sourceMappingURL=main.css.map */
