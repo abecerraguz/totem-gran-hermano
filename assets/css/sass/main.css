@@ -1295,6 +1295,83 @@ template {
   color: #000;
 }
 
+.enProcesoDeEnvioInfo {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  position: fixed;
+  bottom: -200px;
+  left: 0;
+  z-index: 999;
+  box-shadow: 0px -7.68px 15.36px 0px rgba(16, 4, 35, 0.08);
+  padding: 1.3rem 2.25rem 1.5rem 2.25rem;
+  transition: all 0.3s ease-in-out;
+  border-radius: 1.5rem 1.5rem 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.enProcesoDeEnvioInfo__line {
+  width: 10vw;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #EAE3E3;
+  margin: 1rem 0 1.5rem 0;
+}
+.enProcesoDeEnvioInfo__text {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.enProcesoDeEnvioInfo__body {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.enProcesoDeEnvioInfo__body a.button {
+  display: block;
+  width: 100%;
+}
+.enProcesoDeEnvioInfo__info h4 {
+  margin: 0 0 1rem 0;
+  font-size: 2.375rem;
+  color: #000;
+  text-align: center;
+  font-weight: bold;
+}
+.enProcesoDeEnvioInfo__info p {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  color: #000;
+  text-align: center;
+  opacity: 0.5;
+  font-weight: bold;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
 .agregarAlCarroActive {
   bottom: 0;
+}
+
+.enProcesoDeEnvio {
+  width: 100vw;
+  height: 100vh;
+  background-color: #60F6C0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.enProcesoDeEnvio__icon {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #50D8A7;
+  padding: 2rem;
+  margin-bottom: 5rem;
 }/*# sourceMappingURL=main.css.map */

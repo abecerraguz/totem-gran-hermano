@@ -1,0 +1,19 @@
+.enProcesoDeEnvio{
+    width: 100vw;
+    height: 100vh;
+    background-color: $green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__icon{
+        width: 300px;
+        height:300px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $greenIcon;
+        padding: 2rem;
+        margin-bottom: 5rem;
+    }
+}
