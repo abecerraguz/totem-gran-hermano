@@ -965,6 +965,99 @@ template {
   font-size: 1.875rem;
 }
 
+.cardGeolocation {
+  width: 100%;
+  height: auto;
+  border: 1px solid #DBDADE;
+  border-radius: 7.561px;
+  padding: 2.2rem 2.5rem 0.5rem 2.5rem;
+}
+.cardGeolocation__img {
+  width: 20vw;
+  height: auto;
+}
+.cardGeolocation__img img {
+  width: 100%;
+  height: auto;
+}
+.cardGeolocation__header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-bottom: 2px solid #DBDADE;
+  padding: 0 0 2rem 0;
+  gap: 2rem;
+}
+.cardGeolocation__text h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.cardGeolocation__text p {
+  margin: 0;
+  font-size: 1.375rem;
+  color: #70697A;
+}
+.cardGeolocation__footer {
+  width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: end;
+  gap: 1rem;
+}
+.cardGeolocation__footer p {
+  margin: 0;
+  font-size: 1.375rem;
+}
+.cardGeolocation__footer img {
+  width: 40px;
+  height: auto;
+  max-width: 40px;
+  margin-top: 0.3rem;
+}
+.cardGeolocation__footer span {
+  font-size: 1.375rem;
+  color: #100423;
+  padding-right: 1rem;
+  font-weight: bold;
+}
+
+.cardResumen {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.cardResumen__title {
+  font-size: 1.875rem;
+  margin: 1rem 0;
+}
+.cardResumen__key ul {
+  list-style: none;
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+.cardResumen__key li {
+  font-size: 1.5rem;
+  margin: 0 0 1rem 0;
+}
+.cardResumen__value ul {
+  list-style: none;
+  margin: 0 0 1rem 0;
+  padding: 0;
+  text-align: right;
+}
+.cardResumen__value li {
+  font-size: 1.5rem;
+  margin: 0 0 1rem 0;
+}
+
 .inicio {
   width: 100vw;
   height: 100vh;
@@ -1152,6 +1245,48 @@ template {
 }
 .agregarAlCarro__info h4 {
   margin: 0;
+  font-size: 2.375rem;
+  color: #000;
+}
+
+.agregarAlCarroResumen {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  position: fixed;
+  bottom: -200px;
+  left: 0;
+  z-index: 999;
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.3);
+  padding: 1.3rem 2.25rem 1.5rem 2.25rem;
+  transition: all 0.3s ease-in-out;
+}
+.agregarAlCarroResumen__text {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.agregarAlCarroResumen__body {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.agregarAlCarroResumen__body a.button {
+  display: block;
+  width: 100%;
+}
+.agregarAlCarroResumen__info {
+  display: flex;
+  justify-content: space-between;
+}
+.agregarAlCarroResumen__info p {
+  margin: 0 0 1rem 0;
+  font-size: 2.375rem;
+  color: #000;
+}
+.agregarAlCarroResumen__info h4 {
+  margin: 0 0 1rem 0;
   font-size: 2.375rem;
   color: #000;
 }
