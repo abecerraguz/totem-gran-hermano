@@ -21,9 +21,9 @@
     }
     &__body{
         h2{
+            font-family: $segma-semi-bold;
             text-align: center;
             font-size: 1.875rem;
-            font-weight: 600;
             margin: 0 0 0.7rem 0;
             padding: 0;
         }
@@ -44,6 +44,7 @@
         text-align: center;
         z-index: 999;
         padding-top: 1rem;
+    
 }
         span{
             background-color: rgb(224, 224, 224);
@@ -51,7 +52,7 @@
             margin-top: 1rem;
             border-radius: 0.3rem;
             font-size: 1.125rem;
-            font-weight: 600;
+            font-family: $segma-semi-bold;
         }
     }
 
@@ -89,20 +90,23 @@
     }
     &__categoria{
         position: absolute;
-        font-size: 1.875rem;
+        font-size: 1.75rem;
         margin: 1.25rem 0 1.25rem 1.25rem;
+        font-family: $segma-semi-bold;
 
     }
     &__categorias{
         font-size: 2rem;
         margin: 0 0 1rem 0;
-
+        font-family: $segma;
+        color: #4C4359;
     }
 }
 
 .inCategory{
     font-size: 2.375rem;
     margin: 2.25rem 0;
+    font-family: $segma-semi-bold;
     &__card{
         width: 100%;
         height: auto;
@@ -136,6 +140,7 @@
 
     &__number{
         font-size: 1.875rem;
+        font-family: $segma-semi-bold;
     }
 
     &__add.addProduct{
@@ -175,7 +180,7 @@
     }
     &__body--price{
         font-size: 1.875rem;
-        font-weight: 600;
+        font-family: $segma-semi-bold;
         text-transform: uppercase;
         margin: 0 0 0.5rem 0;
         color: #100423;
@@ -184,15 +189,18 @@
         font-size: 1.375rem;
         margin: 0 0 2rem 0;
         color: #100423;
+        font-family: $segma;
     }
     &__body--detailDos{
         font-size: 1.25rem;
         margin:0;
         color: #100423;
+        font-family: $segma-semi-bold;
         span{
             color: #70697A;
             font-weight: bold;
             font-size: 1.25rem;
+            font-family: $segma-semi-bold;
         }
     }
 }
@@ -230,6 +238,7 @@
         font-weight: 600;
         margin-bottom: 1rem;
         text-align: right;
+        font-family: $segma-semi-bold;
     }
     &__input{
         border: 1px solid #100423;
@@ -246,6 +255,7 @@
         }
         &--number{
             font-size: 1.875rem;
+            font-family: $segma-semi-bold;
         }
     }
 }
@@ -278,7 +288,7 @@
         h2{
             margin: 0;
             font-size: 1.5rem;
-            font-weight: 600;
+            font-family: $segma-semi-bold;
         }
         p{
             margin: 0;
@@ -308,7 +318,7 @@
             font-size: 1.375rem;
             color: #100423;
             padding-right: 1rem;
-            font-weight: bold;
+            font-family: $segma-semi-bold;
         }
     }
 
@@ -325,6 +335,7 @@
     &__title{
         font-size: 1.875rem;
         margin: 1rem 0;
+        font-family: $segma-semi-bold;
     }
     &__key{
         ul{
@@ -348,7 +359,7 @@
         li{
             font-size: 1.5rem;
             margin: 0 0 1rem 0;
-            font-weight: bold;
+            font-family: $segma-semi-bold;
         };
         span{
             color: #1C8663;

@@ -1,6 +1,18 @@
 @font-face {
-  font-family: "texta_altregular";
-  src: url("font/latinotype_-_textaalt-regular-webfont.woff2") format("woff2"), url("font/latinotype_-_textaalt-regular-webfont.woff") format("woff");
+  font-family: "segmasemibold";
+  src: url("font/segma-semibold-webfont.woff2") format("woff2"), url("font/segma-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "segmabold";
+  src: url("font/segma-bold-webfont.woff2") format("woff2"), url("font/segma-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "segmaregular";
+  src: url("font/segma-regular-webfont.woff2") format("woff2"), url("font/segma-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -265,7 +277,7 @@ body * {
 body {
   margin: 0;
   background-color: rgba(220, 220, 220, 0.14);
-  font-family: "texta_altregular", sans-serif;
+  font-family: "segmaregular", sans-serif;
 }
 
 /**
@@ -573,7 +585,7 @@ template {
   text-decoration: none;
   border-radius: 5px;
   font-size: 1.68rem;
-  font-weight: 600;
+  font-family: "segmasemibold", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -599,6 +611,7 @@ template {
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  font-family: "segmasemibold", sans-serif;
 }
 .header__location p img {
   margin-right: 1rem;
@@ -624,21 +637,23 @@ template {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 35vw;
+  width: 43vw;
   height: 372px;
   padding: 0 0 0 2.25rem;
 }
 .header__info h1 {
   font-size: 2.375rem;
   font-style: normal;
-  font-weight: 600;
-  line-height: 35px; /* 121.053% */
-  margin: 0;
+  font-family: "segmasemibold", sans-serif;
+  line-height: 40px; /* 121.053% */
+  margin: 4rem 0 0 0;
+  letter-spacing: 1px;
 }
 .header__info p {
   font-size: 1.25rem;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
+  line-height: 26px;
 }
 .header__imgPedidosYa {
   position: absolute !important;
@@ -655,6 +670,7 @@ template {
   margin: 0.8rem 2.25rem;
   color: #000;
   font-size: 1.5rem;
+  font-family: "segmasemibold", sans-serif;
 }
 .header__clock {
   display: inline-block;
@@ -679,7 +695,7 @@ template {
   justify-content: center;
   align-items: center;
   font-size: 1.875rem;
-  font-weight: 600;
+  font-family: "segmasemibold", sans-serif;
 }
 .header__pedidosYaMarket {
   padding: 2.25rem 2.25rem 2rem 2.25rem;
@@ -708,6 +724,7 @@ template {
 .header__pedidosYaMarketInfo h1 {
   margin: 0;
   font-size: 2.375rem;
+  font-family: "segmasemibold", sans-serif;
 }
 .header__pedidosYaMarketInfo p {
   margin: 0;
@@ -745,9 +762,9 @@ template {
      object-fit: cover;
 }
 .card__body h2 {
+  font-family: "segmasemibold", sans-serif;
   text-align: center;
   font-size: 1.875rem;
-  font-weight: 600;
   margin: 0 0 0.7rem 0;
   padding: 0;
 }
@@ -773,7 +790,7 @@ template {
   margin-top: 1rem;
   border-radius: 0.3rem;
   font-size: 1.125rem;
-  font-weight: 600;
+  font-family: "segmasemibold", sans-serif;
 }
 
 .opacity-0-5 {
@@ -810,17 +827,21 @@ template {
 }
 .cardPedidosYaMerket__categoria {
   position: absolute;
-  font-size: 1.875rem;
+  font-size: 1.75rem;
   margin: 1.25rem 0 1.25rem 1.25rem;
+  font-family: "segmasemibold", sans-serif;
 }
 .cardPedidosYaMerket__categorias {
   font-size: 2rem;
   margin: 0 0 1rem 0;
+  font-family: "segmaregular", sans-serif;
+  color: #4C4359;
 }
 
 .inCategory {
   font-size: 2.375rem;
   margin: 2.25rem 0;
+  font-family: "segmasemibold", sans-serif;
 }
 .inCategory__card {
   width: 100%;
@@ -854,6 +875,7 @@ template {
 }
 .inCategory__number {
   font-size: 1.875rem;
+  font-family: "segmasemibold", sans-serif;
 }
 .inCategory__add.addProduct {
   position: absolute;
@@ -891,7 +913,7 @@ template {
 }
 .inCategory__body--price {
   font-size: 1.875rem;
-  font-weight: 600;
+  font-family: "segmasemibold", sans-serif;
   text-transform: uppercase;
   margin: 0 0 0.5rem 0;
   color: #100423;
@@ -900,16 +922,19 @@ template {
   font-size: 1.375rem;
   margin: 0 0 2rem 0;
   color: #100423;
+  font-family: "segmaregular", sans-serif;
 }
 .inCategory__body--detailDos {
   font-size: 1.25rem;
   margin: 0;
   color: #100423;
+  font-family: "segmasemibold", sans-serif;
 }
 .inCategory__body--detailDos span {
   color: #70697A;
   font-weight: bold;
   font-size: 1.25rem;
+  font-family: "segmasemibold", sans-serif;
 }
 
 .cardDetail {
@@ -946,6 +971,7 @@ template {
   font-weight: 600;
   margin-bottom: 1rem;
   text-align: right;
+  font-family: "segmasemibold", sans-serif;
 }
 .cardDetail__input {
   border: 1px solid #100423;
@@ -963,6 +989,7 @@ template {
 }
 .cardDetail__input--number {
   font-size: 1.875rem;
+  font-family: "segmasemibold", sans-serif;
 }
 
 .cardGeolocation {
@@ -993,7 +1020,7 @@ template {
 .cardGeolocation__text h2 {
   margin: 0;
   font-size: 1.5rem;
-  font-weight: 600;
+  font-family: "segmasemibold", sans-serif;
 }
 .cardGeolocation__text p {
   margin: 0;
@@ -1023,7 +1050,7 @@ template {
   font-size: 1.375rem;
   color: #100423;
   padding-right: 1rem;
-  font-weight: bold;
+  font-family: "segmasemibold", sans-serif;
 }
 
 .cardResumen {
@@ -1037,6 +1064,7 @@ template {
 .cardResumen__title {
   font-size: 1.875rem;
   margin: 1rem 0;
+  font-family: "segmasemibold", sans-serif;
 }
 .cardResumen__key ul {
   list-style: none;
@@ -1056,7 +1084,7 @@ template {
 .cardResumen__value li {
   font-size: 1.5rem;
   margin: 0 0 1rem 0;
-  font-weight: bold;
+  font-family: "segmasemibold", sans-serif;
 }
 .cardResumen__value span {
   color: #1C8663;
@@ -1251,6 +1279,7 @@ template {
   margin: 0;
   font-size: 2.375rem;
   color: #000;
+  font-family: "segmasemibold", sans-serif;
 }
 
 .agregarAlCarroResumen {
@@ -1288,11 +1317,13 @@ template {
   margin: 0 0 1rem 0;
   font-size: 2.375rem;
   color: #000;
+  font-family: "segmasemibold", sans-serif;
 }
 .agregarAlCarroResumen__info h4 {
   margin: 0 0 1rem 0;
   font-size: 2.375rem;
   color: #000;
+  font-family: "segmasemibold", sans-serif;
 }
 
 .enProcesoDeEnvioInfo {
@@ -1374,4 +1405,16 @@ template {
   background-color: #50D8A7;
   padding: 2rem;
   margin-bottom: 5rem;
+}
+
+.textoSemiBold {
+  font-family: "segmasemibold", sans-serif;
+}
+
+.textoBold {
+  font-family: "segmabold", sans-serif;
+}
+
+.textoRegular {
+  font-family: 400;
 }/*# sourceMappingURL=main.css.map */

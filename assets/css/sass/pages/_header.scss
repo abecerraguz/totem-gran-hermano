@@ -17,6 +17,7 @@
             display: flex;
             align-items: flex-start;
             justify-content: center;
+            font-family: $segma-semi-bold;
             img{
                 margin-right: 1rem;
             }
@@ -30,7 +31,6 @@
         padding: 0;
         background-color: $red;
         position: relative;
-
 
         img{
             width: auto;
@@ -47,20 +47,23 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 35vw;
+        width: 43vw;
         height: 372px;
         padding: 0 0 0 2.25rem;
         h1{
             font-size: 2.375rem;
             font-style: normal;
-            font-weight: 600;
-            line-height: 35px; /* 121.053% */
-            margin: 0;
+            // font-weight: 400;
+            font-family: $segma-semi-bold;
+            line-height: 40px; /* 121.053% */
+            margin: 4rem 0 0 0;
+            letter-spacing: 1px;
         }
         p{
             font-size: 1.25rem;
             font-style: normal;
-            font-weight: 500;
+            font-weight: 400;
+            line-height: 26px;
         }
     }
 
@@ -79,6 +82,7 @@
             margin: 0.8rem 2.25rem;
             color: $black;
             font-size: 1.5rem;
+            font-family: $segma-semi-bold;
         }
     }
 
@@ -105,7 +109,7 @@
             justify-content: center;
             align-items: center;
             font-size:1.875rem ;
-            font-weight: 600;
+            font-family: $segma-semi-bold;
         }
     }
    
@@ -137,6 +141,7 @@
         h1{
             margin: 0;
             font-size: 2.375rem;
+            font-family: $segma-semi-bold;
         }
         p{
             margin: 0;

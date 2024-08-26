@@ -1,11 +1,29 @@
+// /assets/css/sass/font/segma-regular-webfont.woff2
 @font-face {
-    font-family: 'texta_altregular';
-    src: url('font/latinotype_-_textaalt-regular-webfont.woff2') format('woff2'),
-         url('font/latinotype_-_textaalt-regular-webfont.woff') format('woff');
+    font-family: 'segmasemibold';
+    src: url('font/segma-semibold-webfont.woff2') format('woff2'),
+         url('font/segma-semibold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
+
+@font-face {
+    font-family: 'segmabold';
+    src: url('font/segma-bold-webfont.woff2') format('woff2'),
+         url('font/segma-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'segmaregular';
+    src: url('font/segma-regular-webfont.woff2') format('woff2'),
+         url('font/segma-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 
 $black-90:#181818;
 $black-80:#141414;
@@ -26,13 +44,18 @@ $greenIcon:#50D8A7;
 
 
 // FONT
-$latinotype: "texta_altregular", sans-serif;
+// $latinotype: "texta_altregular", sans-serif;
+$segma:"segmaregular", sans-serif;
+$segma-semi-bold:"segmasemibold", sans-serif;
+$segma-bold:"segmabold", sans-serif;
 
 
 // FONT-WEIGHT
-$open-sans-bold:700;
-$open-sans-regular:400;
+$segma-sans-bold:700;
+$segma-regular:400;
 $open-sans-light:200;
+
+
 
 $roboto-bold:700;
 $roboto-regular:400;
